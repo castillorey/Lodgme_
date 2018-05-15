@@ -32,8 +32,8 @@ public class Principal extends AppCompatActivity {
 
         lstOpciones = findViewById(R.id.lstOpciones);
         personas = Datos.obtener();
-//        personas = new ArrayList<>();
-//        personas.add(new Persona("1140887556","Kevin","Castillo",R.drawable.images2,1));
+        personas = new ArrayList<>();
+        personas.add(new Persona("0","1140887556","Kevin","Castillo",R.drawable.images2,1));
 //        personas.add(new Persona("11408874454","Luis","Sarmiento",R.drawable.images,1));
 //        personas.add(new Persona("11408870045","Pedro","Castro",R.drawable.images3,1));
 

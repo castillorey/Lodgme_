@@ -12,7 +12,8 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        app:cardCornerRadius="10dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="2dp"
         app:cardElevation="5dp"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="115dp">
@@ -38,31 +39,32 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/lblCedula"
+                    android:id="@+id/lblNombre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TextView"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Nombre"
                     android:textAlignment="textStart"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/lblNombre"
+                    android:id="@+id/lblCedula"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TextView"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Cedula"
                     android:textAlignment="textStart"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/lblApellido"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TextView"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Apellido"
                     android:textAlignment="textStart"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textSize="18sp" />
             </LinearLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>

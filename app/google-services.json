@@ -8,12 +8,51 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:973406144787:android:440c7f73d575aafa",
+        "android_client_info": {
+          "package_name": "com.kevinmcr.material_persona"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973406144787-an6qtkv41hdgnv5ntjg734e6r50dct1n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgrirUaV6l6sz7Cni8O1obJ_MjiDX6xi8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:973406144787:android:2974f86f0b506083",
         "android_client_info": {
           "package_name": "com.kevinmcr.material_personas"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "973406144787-j8tt2siksjc019dfcrij5954kcgclh28.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kevinmcr.material_personas",
+            "certificate_hash": "2f57610ae201bc9933fc27811d44139daad338ad"
+          }
+        },
         {
           "client_id": "973406144787-0642dgaru5iu4snpr4d7g1qo34fjsqq8.apps.googleusercontent.com",
           "client_type": 1,

@@ -5,19 +5,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
     android:orientation="vertical"
     tools:context="com.kevinmcr.material_personas.CrearPersona"
     tools:layout_editor_absoluteX="8dp"
     tools:layout_editor_absoluteY="8dp">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/lblCrearPersona"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/crear_persoas"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="@string/crear_persona"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
     <android.support.design.widget.TextInputLayout
@@ -29,8 +31,15 @@
             android:id="@+id/txtCedula"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/text_view_border"
+            android:fontFamily="@font/nunito_semibold"
             android:hint="@string/cedula"
-            android:inputType="number" />
+            android:inputType="number"
+            android:paddingBottom="15dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="15dp" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -42,7 +51,14 @@
             android:id="@+id/txtNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/nombre" />
+            android:layout_margin="30dp"
+            android:background="@drawable/text_view_border"
+            android:fontFamily="@font/nunito_semibold"
+            android:hint="@string/nombre"
+            android:paddingBottom="15dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="15dp" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -54,7 +70,14 @@
             android:id="@+id/txtApellido"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/apellido" />
+            android:layout_margin="30dp"
+            android:background="@drawable/text_view_border"
+            android:fontFamily="@font/nunito_semibold"
+            android:hint="@string/apellido"
+            android:paddingBottom="15dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="15dp" />
     </android.support.design.widget.TextInputLayout>
 
     <Spinner
@@ -62,28 +85,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <LinearLayout
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="guardar"
+        android:text="@string/guardar" />
 
-        <Button
-            android:id="@+id/button"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="guardar"
-            android:text="@string/guardar" />
-
-        <Button
-            android:id="@+id/button2"
-            style="@android:style/Widget.DeviceDefault.Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="limpiar"
-            android:text="@string/limpiar"
-            android:textAppearance="@android:style/TextAppearance.Material.Widget.Button" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/button2"
+        style="@android:style/Widget.DeviceDefault.Button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="limpiar"
+        android:text="@string/limpiar"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.Button" />
 </LinearLayout>
